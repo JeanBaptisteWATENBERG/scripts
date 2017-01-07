@@ -10,8 +10,8 @@ rm -f /opt/java/jdk1.8.0_77/src.zip /opt/java/jdk1.8.0_77/javafx-src.zip;
 rm -rf /opt/java/jdk1.8.0_77/lib/missioncontrol/ /opt/java/jdk1.8.0_77/lib/visualvm/ /opt/java/jdk1.8.0_77/db/;
 update-alternatives --install /usr/bin/java java /opt/java/latest/bin/java 1;
 update-alternatives --install /usr/bin/javac javac /opt/java/latest/bin/javac 1;
-EXPORT JAVA_HOME=/opt/java/latest;
-EXPORT PATH=$PATH:$JAVA_HOME/bin;
+export JAVA_HOME=/opt/java/latest;
+export PATH=$PATH:$JAVA_HOME/bin;
 rm -f jdk-8-linux-x64.tar.gz; apt-get remove -y wget; apt-get autoremove -y; apt-get clean -y; apt-get autoclean -y;
 
 #Install docker
